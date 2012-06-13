@@ -8,7 +8,7 @@ $ cd "directory"
 $ vim XXXXX
 $ git add XXXXX
 $ git commit -m 'comment'
-($ git remote add origin git@github.com:'user name'/'repo name'k)
+($ git remote add origin git@github.com:'user_name'/'repo_name')
 ($ git status)
 $ git push origin master
 
@@ -19,7 +19,7 @@ $ cd "directory"
 $ vim XXXXX
 $ git add XXXXX
 $ git commit -m 'comment'
-($ git remote add origin git@github.com:'user name'/'repo name'k)
+($ git remote add origin git@github.com:'user_name'/'repo_name')
 ($ git status)
 $ git push origin master
 
@@ -29,6 +29,6 @@ Delete
 $ cd "directory"
 $ git rm XXXXX
 $ git commit -m 'comment'
-($ git remote add origin git@github.com:'user name'/'repo name'k)
+($ git remote add origin git@github.com:'user_name'/'repo_name')
 ($ git status)
 $ git push origin master
