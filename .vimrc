@@ -1,6 +1,6 @@
 set autoindent
-set backupdir=/temp/vimbackup
-set directory=/temp/vimbackup
+set backupdir=~/temp/vimbackup
+set directory=~/temp/vimbackup
 set list
 set number
 set shiftwidth=2
@@ -11,7 +11,7 @@ colorscheme solarized
 set nocompatible
 filetype off
 
-set rtp+=/home/kyoshida/.vim/vundle.git/
+set rtp+=~/.vim/vundle.git/
 call vundle#rc()
 Bundle 'vim-ruby/vim-ruby'
 Bundle 'tpope/vim-rails'
