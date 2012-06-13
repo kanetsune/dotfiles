@@ -1,3 +1,34 @@
 
-This is my vim configretion
+This is git command list.
 
+-------------------
+Add
+-------------------
+$ cd "directory"
+$ vim XXXXX
+$ git add XXXXX
+$ git commit -m 'comment'
+($ git remote add origin git@github.com:'user name'/'repo name'k)
+($ git status)
+$ git push origin master
+
+-------------------
+Update
+-------------------
+$ cd "directory"
+$ vim XXXXX
+$ git add XXXXX
+$ git commit -m 'comment'
+($ git remote add origin git@github.com:'user name'/'repo name'k)
+($ git status)
+$ git push origin master
+
+-------------------
+Delete
+-------------------
+$ cd "directory"
+$ git rm XXXXX
+$ git commit -m 'comment'
+($ git remote add origin git@github.com:'user name'/'repo name'k)
+($ git status)
+$ git push origin master
