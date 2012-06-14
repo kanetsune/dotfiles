@@ -23,6 +23,8 @@ Bundle 'Shougo/vimproc'
 Bundle 'thinca/vim-quickrun'
 Bundle 'thinca/vim-ref'
 Bundle 'vim-ruby/vim-ruby'
+Bundle 'JavaScript-syntax'
+Bundle 'pangloss/vim-javascript'
 
 "
 " basic setting
@@ -148,9 +150,11 @@ autocmd BufNewFile,BufRead *.go set filetype=go
 autocmd FileType eruby,html,markdown setlocal omnifunc=htmlcomplete#CompleteTags
 autocmd FileType xml setlocal omnifunc=xmlcomplete#CompleteTags
 autocmd FileType css setlocal omnifunc=csscomplete#CompleteCSS
-autocmd FileType javascript setlocal omnifunc=javascriptcomplete#CompleteJS
 autocmd FileType python setlocal omnifunc=pythoncomplete#Complete
 autocmd FileType ruby setlocal expandtab tabstop=2 shiftwidth=2 softtabstop=2
+
+autocmd FileType javascript:compiler gjslint
+autocmd QuickfixCmdPost make copen
 
 
 augroup MyXML
