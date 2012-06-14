@@ -32,3 +32,99 @@ $ git commit -m 'comment'
 ($ git remote add origin git@github.com:'user_name'/'repo_name')
 ($ git status)
 $ git push origin master
+
+
+
+
+
+
+
+
+node.js development
+
+
+
+
+-------------------
+check nessery modules
+-------------------
+$ sudo aptitude install build-essential
+$ sudo aptitude install libssl-dev
+$ sudo aptitude install curl
+
+
+-------------------
+check out nvm
+-------------------
+$ cd ~
+$ rm -r ~/.nvm
+$ git clone git://github.com/creationix/nvm.git ~/.nvm
+
+
+-------------------
+install nvm
+-------------------
+$ sourcd ~/.nvm/nvm.sh
+
+
+-------------------
+install node.js
+-------------------
+$ nvm install v0.6.5
+
+ ..... there are many logs......
+
+Now using node v0.6.5 !
+
+
+-------------------
+use node.js
+-------------------
+$ nvm use v0.6.5
+
+Now using node v0.6.5
+
+
+-------------------
+check command
+-------------------
+$ nvm ls
+     v0.6.5
+current:   v0.6.5
+
+
+
+
+
+
+node.js sample
+
+
+-------------------
+sample js
+-------------------
+$ cd ~
+$ mkdir node_progurams
+$ cd node_progurams
+$ vim helloworld.js
+
+##########
+console.log("Hellow World");
+##########
+
+$ node helloworld.js
+Hellow World
+
+
+
+
+
+
+
+
+
+
+
+
+
+
