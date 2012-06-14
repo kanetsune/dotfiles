@@ -101,7 +101,7 @@ node.js sample
 
 
 -------------------
-sample js
+helloworld.js
 -------------------
 $ cd ~
 $ mkdir node_progurams
@@ -120,11 +120,31 @@ Hellow World
 
 
 
+node.js server side sample
 
 
+-------------------
+server.js
+-------------------
+$ cd node_progurams
+$ vim server.js
 
+###########
+var http = require("http");
+http.createServer(function(request, response) {
+    response.writeHead(200, {"Content-Type": "text/plain"});
+    response.write("Hello World");
+    response.end();
+}).listen(10080);
+###########
 
+$ node server.js
+>
 
+You can access http://localhost:10080/ with browser 
 
+###########
+Hello World
+###########
 
 
