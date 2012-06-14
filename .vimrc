@@ -15,6 +15,7 @@ call vundle#rc()
 Bundle 'Shougo/neocomplcache'
 Bundle 'Shougo/unite.vim'
 Bundle 'Shougo/vimshell'
+Bundle 'Shougo/vimproc'
 
 "
 " another repo
@@ -31,6 +32,7 @@ syntax on
 filetype plugin indent on
 
 set encoding=utf-8
+set fileencodings=ucs-bom,iso-2022-jp-3,iso-2022-jp,eucjp-ms,euc-jisx0213,euc-jp,sjis,cp932,utf-8
 set number
 set ruler
 set title
@@ -226,11 +228,18 @@ let g:neocomplcache_keyword_patterns['default'] = '\h\w*'
 " unite.vim
 
 
-nnoremap    [unite]   <Nop>
-nmap    f [unite]
+let g:unite_enable_start_insert=1
+nnoremap <C-u> :<C-u>Unite buffer file_mru file_rec<CR>
 
-nnoremap [unite]u  :<C-u>Unite<Space>
-nnoremap <silent> [unite]a  :<C-u>UniteWithCurrentDir -buffer-name=files buffer file_mru bookmark file<CR>
-nnoremap <silent> [unite]f  :<C-u>Unite -buffer-name=files file<CR>
-nnoremap <silent> [unite]b  :<C-u>Unite buffer<CR>
-nnoremap <silent> [unite]m  :<C-u>Unite file_mru<CR>
+"mru,reg,buf
+"noremap :um :<C-u>Unite file_mru -buffer-name=file_mru<CR>
+"noremap :ur :<C-u>Unite register -buffer-name=register<CR>
+"noremap :ub :<C-u>Unite buffer -buffer-name=buffer<CR>
+
+"file current_dir
+"noremap :ufc :<C-u>Unite file -buffer-name=file<CR>
+"noremap :ufcr :<C-u>Unite file_rec -buffer-name=file_rec<CR>
+
+"file file_current_dir
+"noremap :uff :<C-u>UniteWithBufferDir file -buffer-name=file<CR>
+"noremap :uffr :<C-u>UniteWithBufferDir file_rec -buffer-name=file_rec<CR>
