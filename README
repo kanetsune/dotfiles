@@ -148,3 +148,61 @@ Hello World
 ###########
 
 
+
+
+
+
+express(framework) install
+
+
+-------------------
+express install
+-------------------
+
+$ npm install -g express
+
+-------------------
+make application
+-------------------
+
+$ cd ~
+$ cd node_progurams
+$ express app1
+
+create : app1
+create : app1/package.json
+create : app1/app.js
+create : app1/views
+create : app1/views/layout.jade
+create : app1/views/index.jade
+create : app1/public/javascripts
+create : app1/public/images
+create : app1/public/stylesheets
+create : app1/public/stylesheets/style.css
+
+$ cd app1
+$ vim packege.json
+
+{
+    "name": "application-name"
+    , "version": "0.0.1"
+    , "private": true
+    , "dependencies": {
+        "express": "2.5.0"
+        , "jade": ">= 0.0.1"
+        , "ejs": ""
+    }
+}
+
+$ npm install
+$ node app.js
+Express server listening on port 3000 in development mode
+
+http://localhost:3000/
+
+############
+Welcome Express
+############
+
+
+
