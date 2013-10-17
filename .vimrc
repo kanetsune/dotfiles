@@ -46,7 +46,7 @@ set noswapfile
 " show invisible character
 "
 set list
-set listchars=eol:$,tab:>\ ,extends:<
+set listchars=tab:>\ ,extends:<
 "
 " beep
 "
