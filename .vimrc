@@ -6,25 +6,26 @@
 set nocompatible
 filetype off
 
-set rtp+=~/.vim/vundle.git/
-call vundle#rc()
+set rtp+=~/.vim/bundle/neobundle.vim
+call neobundle#rc(expand('~/.vim/bundle/'))
 
 "
 " original repo
 "
-Bundle 'Shougo/neocomplcache'
-Bundle 'Shougo/unite.vim'
-Bundle 'Shougo/vimshell'
-Bundle 'Shougo/vimproc'
+NeoBundle 'Shougo/neobundle.vim'
+NeoBundle 'Shougo/neocomplcache'
+NeoBundle 'Shougo/unite.vim'
+NeoBundle 'Shougo/vimshell'
+NeoBundle 'Shougo/vimproc'
 
 "
 " another repo
 "
-Bundle 'thinca/vim-quickrun'
-Bundle 'thinca/vim-ref'
-Bundle 'vim-ruby/vim-ruby'
-Bundle 'JavaScript-syntax'
-Bundle 'pangloss/vim-javascript'
+NeoBundle 'thinca/vim-quickrun'
+NeoBundle 'thinca/vim-ref'
+NeoBundle 'vim-ruby/vim-ruby'
+NeoBundle 'JavaScript-syntax'
+NeoBundle 'pangloss/vim-javascript'
 
 "
 " basic setting
